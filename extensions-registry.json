@@ -1,0 +1,14 @@
+[
+  {
+    "id": "console-eruda",
+    "name": "Console",
+    "icon": "🐞",
+    "publisher": "eruda (liriliri)",
+    "version": "3.2.3",
+    "description": "A DevTools-style console for mobile — view logs, errors and warnings from your preview.",
+    "injectsIntoPreview": true,
+    "scriptUrl": "https://cdn.jsdelivr.net/npm/eruda@3.2.3/eruda.js",
+    "activationCode": "if (window.eruda) { eruda.init(); }",
+    "readmeUrl": "https://raw.githubusercontent.com/liriliri/eruda/master/README.md"
+  }
+]
