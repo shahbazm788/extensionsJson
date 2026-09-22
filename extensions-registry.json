@@ -10,5 +10,18 @@
     "scriptUrl": "https://cdn.jsdelivr.net/npm/eruda@3.2.3/eruda.js",
     "activationCode": "if (window.eruda) { eruda.init(); }",
     "readmeUrl": "https://raw.githubusercontent.com/liriliri/eruda/master/README.md"
-  }
+  },
+  {
+  "id": "emmet-html-css",
+  "name": "Emmet",
+  "icon": "⚡",
+  "publisher": "emmetio",
+  "version": "6.4.0",
+  "description": "Type abbreviations like div.card>h2+p and press Tab to expand full HTML/CSS instantly.",
+  "injectsIntoApp": true,
+  "injectsIntoPreview": false,
+  "scriptUrl": "https://cdn.jsdelivr.net/npm/emmet-monaco-es@5.4.0/dist/emmet-monaco.min.js",
+  "activationCode": "function initEmmet() { if (window.emmetMonaco && window.monaco) { window.emmetMonaco.emmetHTML(window.monaco); window.emmetMonaco.emmetCSS(window.monaco); } else { setTimeout(initEmmet, 500); } } initEmmet();",
+  "readmeUrl": "https://raw.githubusercontent.com/Nyzox/emmet-monaco-es/master/README.md"
+}
 ]
