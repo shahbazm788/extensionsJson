@@ -16,12 +16,13 @@
   "name": "Emmet",
   "icon": "⚡",
   "publisher": "emmetio",
-  "version": "6.4.0",
+  "version": "5.4.0",
   "description": "Type abbreviations like div.card>h2+p and press Tab to expand full HTML/CSS instantly.",
   "injectsIntoApp": true,
   "injectsIntoPreview": false,
-  "scriptUrl": "https://cdn.jsdelivr.net/npm/emmet-monaco-es@5.4.0/dist/emmet-monaco.min.js",
-  "activationCode": "function initEmmet() { if (window.emmetMonaco && window.monaco) { window.emmetMonaco.emmetHTML(window.monaco); window.emmetMonaco.emmetCSS(window.monaco); } else { setTimeout(initEmmet, 500); } } initEmmet();",
+  "scriptUrl": "https://unpkg.com/emmet-monaco-es/dist/emmet-monaco.min.js",
+  "activationCode": "(function startEmmet() { function checkAndInit() { var emmet = window.emmetMonaco || (window.emmetMonacoEs && window.emmetMonacoEs.default) || window.emmet; var monacoObj = window.monaco || (window.editor && window.editor.monaco); if (emmet && monacoObj) { try { if (typeof emmet.emmetHTML === 'function') { emmet.emmetHTML(monacoObj); emmet.emmetCSS(monacoObj); } else if (typeof emmet === 'function') { emmet(monacoObj); } } catch(err) { console.error('[Emmet Init Error]', err); } } else { setTimeout(checkAndInit, 300); } } checkAndInit(); })();",
   "readmeUrl": "https://raw.githubusercontent.com/Nyzox/emmet-monaco-es/master/README.md"
 }
+
 ]
