@@ -59,5 +59,32 @@
     "scriptUrl": "https://cdn.jsdelivr.net/npm/marked/marked.min.js",
     "activationCode": "",
     "readmeUrl": "https://github.com/markedjs/marked"
+  },
+  {
+    "id": "python-offline-runner",
+    "name": "Python Offline Runner (Pyodide)",
+    "icon": "🐍",
+    "publisher": "Pyodide Org",
+    "version": "0.26.1",
+    "description": "Run Python code 100% offline inside your browser using WebAssembly. Includes basic syntax suggestions.",
+    "injectsIntoApp": true,
+    "injectsIntoPreview": false,
+    "scriptUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js",
+    "activationCode": "(async function initPythonRunner() { if (window.loadPyodide && !window.pyodideInstance) { try { window.pyodideInstance = await loadPyodide(); console.log('[Python Extension] Pyodide loaded successfully offline.'); } catch(e) { console.error('[Python Init Error]', e); } } })();",
+    "readmeUrl": "https://raw.githubusercontent.com/pyodide/pyodide/main/README.md"
+  },
+  {
+    "id": "cpp-offline-runner",
+    "name": "C++ Offline Runner (JSCPP)",
+    "icon": "⚡",
+    "publisher": "JSCPP Team",
+    "version": "2.1.2",
+    "description": "Run C++ (iostream, logic, loops) completely offline in the browser.",
+    "injectsIntoApp": true,
+    "injectsIntoPreview": false,
+    "scriptUrl": "https://cdn.jsdelivr.net/npm/jscpp@2.1.2/dist/jscpp.min.js",
+    "activationCode": "console.log('[C++ Extension] JSCPP loaded and ready for offline compilation.');",
+    "readmeUrl": "https://github.com/Hakatashi/JSCPP"
   }
 ]
+
