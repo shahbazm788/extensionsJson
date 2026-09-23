@@ -1,28 +1,63 @@
 [
   {
     "id": "console-eruda",
-    "name": "Console",
+    "name": "Eruda DevTools",
     "icon": "🐞",
-    "publisher": "eruda (liriliri)",
+    "publisher": "liriliri",
     "version": "3.2.3",
-    "description": "A DevTools-style console for mobile — view logs, errors and warnings from your preview.",
+    "description": "A DevTools-style console for mobile — view logs, errors, and network requests.",
     "injectsIntoPreview": true,
     "scriptUrl": "https://cdn.jsdelivr.net/npm/eruda@3.2.3/eruda.js",
     "activationCode": "if (window.eruda) { eruda.init(); }",
     "readmeUrl": "https://raw.githubusercontent.com/liriliri/eruda/master/README.md"
   },
   {
-  "id": "emmet-html-css",
-  "name": "Emmet",
-  "icon": "⚡",
-  "publisher": "emmetio",
-  "version": "5.4.0",
-  "description": "Type abbreviations like div.card>h2+p and press Tab to expand full HTML/CSS instantly.",
-  "injectsIntoApp": true,
-  "injectsIntoPreview": false,
-  "scriptUrl": "https://unpkg.com/emmet-monaco-es/dist/emmet-monaco.min.js",
-  "activationCode": "(function startEmmet() { function checkAndInit() { var emmet = window.emmetMonaco || (window.emmetMonacoEs && window.emmetMonacoEs.default) || window.emmet; var monacoObj = window.monaco || (window.editor && window.editor.monaco); if (emmet && monacoObj) { try { if (typeof emmet.emmetHTML === 'function') { emmet.emmetHTML(monacoObj); emmet.emmetCSS(monacoObj); } else if (typeof emmet === 'function') { emmet(monacoObj); } } catch(err) { console.error('[Emmet Init Error]', err); } } else { setTimeout(checkAndInit, 300); } } checkAndInit(); })();",
-  "readmeUrl": "https://raw.githubusercontent.com/Nyzox/emmet-monaco-es/master/README.md"
-}
-
+    "id": "console-vconsole",
+    "name": "vConsole",
+    "icon": "📱",
+    "publisher": "Tencent",
+    "version": "3.15.1",
+    "description": "Lightweight, extensible mobile browser developer console by Tencent.",
+    "injectsIntoPreview": true,
+    "scriptUrl": "https://unpkg.com/vconsole@latest/dist/vconsole.min.js",
+    "activationCode": "if (window.VConsole) { window.vConsole = new window.VConsole(); }",
+    "readmeUrl": "https://github.com/Tencent/vConsole"
+  },
+  {
+    "id": "emmet-html-css",
+    "name": "Emmet",
+    "icon": "⚡",
+    "publisher": "emmetio",
+    "version": "5.4.0",
+    "description": "Type abbreviations like div.card>h2+p and press Tab to expand full HTML/CSS instantly.",
+    "injectsIntoApp": true,
+    "injectsIntoPreview": false,
+    "scriptUrl": "https://unpkg.com/emmet-monaco-es/dist/emmet-monaco.min.js",
+    "activationCode": "(function startEmmet() { function checkAndInit() { var emmet = window.emmetMonaco || (window.emmetMonacoEs && window.emmetMonacoEs.default) || window.emmet; var monacoObj = window.monaco || (window.editor && window.editor.monaco); if (emmet && monacoObj) { try { if (typeof emmet.emmetHTML === 'function') { emmet.emmetHTML(monacoObj); emmet.emmetCSS(monacoObj); } } catch(err) {} } else { setTimeout(checkAndInit, 300); } } checkAndInit(); })();",
+    "readmeUrl": "https://github.com/Nyzox/emmet-monaco-es"
+  },
+  {
+    "id": "tailwind-css",
+    "name": "Tailwind CSS v4",
+    "icon": "🎨",
+    "publisher": "Tailwind Labs",
+    "version": "4.0.0",
+    "description": "Play CDN for Tailwind CSS to instantly use utility classes in your previews.",
+    "injectsIntoPreview": true,
+    "scriptUrl": "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4",
+    "activationCode": "",
+    "readmeUrl": "https://github.com/tailwindlabs/tailwindcss"
+  },
+  {
+    "id": "markdown-parser",
+    "name": "Marked.js",
+    "icon": "📝",
+    "publisher": "MarkedJS",
+    "version": "12.0.0",
+    "description": "A low-level markdown compiler for parsing markdown files inside previews.",
+    "injectsIntoPreview": true,
+    "scriptUrl": "https://cdn.jsdelivr.net/npm/marked/marked.min.js",
+    "activationCode": "",
+    "readmeUrl": "https://github.com/markedjs/marked"
+  }
 ]
