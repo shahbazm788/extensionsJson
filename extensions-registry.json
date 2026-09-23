@@ -82,9 +82,9 @@
     "description": "Run C++ (iostream, logic, loops) completely offline in the browser.",
     "injectsIntoApp": true,
     "injectsIntoPreview": false,
-    "scriptUrl": "https://cdn.jsdelivr.net/npm/jscpp@2.1.2/dist/jscpp.min.js",
+    "scriptUrl": "https://raw.githubusercontent.com/felixhao28/JSCPP/gh-pages/dist/JSCPP.es5.min.js",
     "activationCode": "console.log('[C++ Extension] JSCPP loaded and ready for offline compilation.');",
-    "readmeUrl": "https://github.com/Hakatashi/JSCPP"
+    "readmeUrl": "https://raw.githubusercontent.com/felixhao28/JSCPP/refs/heads/master/README.md"
   }
 ]
 
