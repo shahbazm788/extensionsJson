@@ -47,5 +47,18 @@
   "scriptUrl": "https://cdn.jsdelivr.net/npm/axe-core@4.9.1/axe.min.js",
   "activationCode": "if (window.axe) { axe.run().then(r => console.log('Accessibility issues:', r.violations)); }",
   "readmeUrl": "https://raw.githubusercontent.com/dequelabs/axe-core/develop/README.md"
+},
+  {
+  "id": "python-run",
+  "name": "Python Runtime",
+  "icon": "🐍",
+  "publisher": "pyodide",
+  "version": "0.26.1",
+  "description": "Run Python (.py) files directly in the app — no internet needed after install (~8MB first download).",
+  "injectsIntoApp": true,
+  "injectsIntoPreview": false,
+  "scriptUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js",
+  "activationCode": "window.__urdPyodideReady = loadPyodide();",
+  "readmeUrl": "https://raw.githubusercontent.com/pyodide/pyodide/main/README.md"
 }
 ]
