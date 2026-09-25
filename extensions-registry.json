@@ -58,7 +58,7 @@
   "injectsIntoApp": true,
   "injectsIntoPreview": false,
   "scriptUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js",
-  "activationCode": "window.__urdPyodideReady = loadPyodide();",
+  "activationCode": "(function(){ var _define = window.define; window.define = undefined; window.__urdPyodideReady = loadPyodide().finally(function(){ window.define = _define; }); })();",
   "readmeUrl": "https://raw.githubusercontent.com/pyodide/pyodide/main/README.md"
 }
 ]
