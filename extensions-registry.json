@@ -53,12 +53,12 @@
   "name": "Python Runtime",
   "icon": "🐍",
   "publisher": "pyodide",
-  "version": "0.26.1",
-  "description": "Run Python (.py) files directly in the app — no internet needed after install (~8MB first download).",
+  "version": "0.26.2",
+  "description": "Run Python (.py) files directly in the app — no internet needed after install.",
   "injectsIntoApp": true,
   "injectsIntoPreview": false,
-  "scriptUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js",
-  "activationCode": "(function(){ var _define = window.define; window.define = undefined; window.__urdPyodideReady = loadPyodide().finally(function(){ window.define = _define; }); })();",
+  "scriptUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js",
+  "activationCode": "(function(){ var _define = window.define; window.define = undefined; window.__urdPyodideReady = loadPyodide({ indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.26.2/full/' }).then(function(py){ window.define = _define; return py; }).catch(function(e){ window.define = _define; console.error(e); }); })();",
   "readmeUrl": "https://raw.githubusercontent.com/pyodide/pyodide/main/README.md"
 }
 ]
